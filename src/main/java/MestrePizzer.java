@@ -7,13 +7,13 @@ public class MestrePizzer {
         this.builder = builder;
     }
 
-    public void constructCustomPizza() {
-        builder.setSize("Large");
-        builder.setDough("Stuffed crust");
-        builder.setToppings(Arrays.asList("Cheese", "Tomato", "Bacon", "Mushrooms"));
+    public void constructPizza() {
+        builder.buildSize();
+        builder.buildDough();
+        builder.buildToppings();
     }
 
     public Pizza getPizza() {
-        return builder.build();
+        return builder.getPizza();
     }
 }
