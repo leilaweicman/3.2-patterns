@@ -9,31 +9,23 @@ public class VegetarianPizzaBuilder implements PizzaBuilder {
         this.pizza = new Pizza();
     }
 
-
     @Override
-    public void setSize(String size) {
-        pizza.setSize(size);
+    public void buildSize() {
+        pizza.setSize("Medium");
     }
 
     @Override
-    public void setDough(String dough) {
-        pizza.setDough(dough);
+    public void buildDough() {
+        pizza.setDough("Thin crust");
     }
 
     @Override
-    public void setToppings(List<String> toppings) {
-        pizza.setToppings(toppings);
+    public void buildToppings() {
+        pizza.setToppings(Arrays.asList("Tomato", "Cheese", "Onion", "Peppers", "Olives"));
     }
 
     @Override
-    public Pizza build() {
+    public Pizza getPizza() {
         return pizza;
-    }
-
-    public Pizza buildDefault() {
-        setSize("Medium");
-        setDough("Thin");
-        setToppings(Arrays.asList("Tomato", "Mozzarella", "Peppers", "Onion", "Olives"));
-        return build();
     }
 }
