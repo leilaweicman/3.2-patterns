@@ -10,29 +10,22 @@ public class HawaiianPizzaBuilder implements PizzaBuilder {
     }
 
     @Override
-    public void setSize(String size) {
-        pizza.setSize(size);
+    public void buildSize() {
+        pizza.setSize("Large");
     }
 
     @Override
-    public void setDough(String dough) {
-        pizza.setDough(dough);
+    public void buildDough() {
+        pizza.setDough("Thick crust");
     }
 
     @Override
-    public void setToppings(List<String> toppings) {
-        pizza.setToppings(toppings);
+    public void buildToppings() {
+        pizza.setToppings(Arrays.asList("Ham", "Pineapple", "Cheese"));
     }
 
     @Override
-    public Pizza build() {
+    public Pizza getPizza() {
         return pizza;
-    }
-
-    public Pizza buildDefault() {
-        setSize("Large");
-        setDough("Thick");
-        setToppings(Arrays.asList("Ham", "Pineapple", "Cheese"));
-        return build();
     }
 }
