@@ -1,3 +1,5 @@
+package nivel1;
+
 import java.util.List;
 
 public class Pizza {
@@ -17,7 +19,7 @@ public class Pizza {
 
     @Override
     public String toString() {
-        return "Pizza [size=" + size +
+        return "nivel1.Pizza [size=" + size +
                 ", dough=" + dough +
                 ", toppings=" + toppings + "]";
     }
