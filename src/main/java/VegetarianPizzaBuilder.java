@@ -5,8 +5,8 @@ public class VegetarianPizzaBuilder implements PizzaBuilder {
 
     private final Pizza pizza;
 
-    public VegetarianPizzaBuilder(Pizza pizza) {
-        this.pizza = pizza;
+    public VegetarianPizzaBuilder() {
+        this.pizza = new Pizza();
     }
 
 
