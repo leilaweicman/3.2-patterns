@@ -1,6 +1,6 @@
-package nivel2.observable;
+package nivel2.observables;
 
-import nivel2.observer.Observer;
+import nivel2.observers.Observer;
 
 public interface Observable {
     void addObserver(Observer observer);

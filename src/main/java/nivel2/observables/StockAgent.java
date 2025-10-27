@@ -1,6 +1,6 @@
-package nivel2.observable;
+package nivel2.observables;
 
-import nivel2.observer.Observer;
+import nivel2.observers.Observer;
 
 import java.util.ArrayList;
 import java.util.List;
