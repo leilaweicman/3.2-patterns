@@ -1,11 +1,11 @@
 import java.util.List;
 
 public class Pizza {
-    private int size;
+    private String size;
     private String dough;
     private List<String> toppings;
 
-    public void setSize(int size) {
+    public void setSize(String size) {
         this.size = size;
     }
     public void setDough(String dough) {
