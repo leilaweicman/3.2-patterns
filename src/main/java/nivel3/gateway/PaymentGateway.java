@@ -13,6 +13,6 @@ public class PaymentGateway {
             e.printStackTrace();
         }
 
-        callback.onPaymentComplete("✅ Payment of $" + amount + " processed successfully.");
+        callback.onPaymentComplete("Payment of $" + amount + " processed successfully.");
     }
 }
